@@ -5,23 +5,32 @@ Wi-Fi Scanner & Signal Monitor untuk Termux Android
 
 <p align="center"> <img src="https://img.shields.io/badge/Status-v1.0%20Stable-brightgreen?style=for-the-badge" alt="Status" /> <a href="https://github.com/XDON1/Termux-WiFi-Radar/stargazers"> <img src="https://img.shields.io/github/stars/XDON1/Termux-WiFi-Radar?style=for-the-badge&color=8A2BE2" alt="Stars" /> </a> <a href="LICENSE"> <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" /> </a> </p> <p align="center"> <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android" /> <img src="https://img.shields.io/badge/Termux-000000?style=flat-square&logo=termux&logoColor=white" alt="Termux" /> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" /> </p> <p align="center"> 🔗 <b>GitHub:</b> <a href="https://github.com/XDON1/Termux-WiFi-Radar"> XDON1/Termux-WiFi-Radar </a> </p> </div>
 📡 Tentang Project
+Wi-Fi Scanner & Signal Monitor untuk Termux Android
 
 Termux WiFi Radar adalah tools sederhana berbasis Python untuk Termux Android yang digunakan untuk melihat informasi jaringan Wi-Fi di sekitar perangkat.
 
 Tools ini menggunakan Termux:API untuk membaca informasi yang disediakan oleh Android.
 
-Cocok untuk:
+⚠️ Termux WiFi Radar bukan Wi-Fi hacking tool.
+
+Tools ini hanya membaca informasi jaringan yang tersedia melalui Android/Termux:API. Tools ini tidak digunakan untuk mengambil password, membobol Wi-Fi, atau menyerang jaringan.
+
+🔗 Repository
+
+GitHub: XDON1/Termux-WiFi-Radar
+
+📡 Tentang Project
+
+Termux WiFi Radar dibuat untuk membantu pengguna melihat informasi jaringan Wi-Fi secara sederhana langsung dari terminal Android.
+
+Project ini cocok untuk:
 
 🔰 Pemula yang ingin belajar jaringan
 📱 Pengguna Android dan Termux
 🌐 Monitoring jaringan Wi-Fi
 📚 Pembelajaran dasar informasi jaringan
 📊 Melihat kekuatan sinyal Wi-Fi
-
-⚠️ Tools ini bukan Wi-Fi hacking tool.
-
-Termux WiFi Radar hanya membaca informasi jaringan yang tersedia melalui Android/Termux:API. Tools ini tidak digunakan untuk mengambil password, membobol Wi-Fi, atau menyerang jaringan.
-
+🐍 Belajar Python dan Termux:API
 ✨ Fitur
 
 Termux WiFi Radar menampilkan:
@@ -45,39 +54,43 @@ Contoh tampilan terminal:
 ║              GDT Termux Wi-Fi Radar                 ║
 ╚══════════════════════════════════════════════════════╝
 
-  ● WIFI YANG SEDANG DIGUNAKAN
-  ─────────────────────────────────────────
+● WIFI YANG SEDANG DIGUNAKAN
+────────────────────────────────────────────────────────
 
-  SSID   : MyWiFi
-  BSSID  : XX:XX:XX:XX:XX:XX
-  IP     : 192.168.1.10
+SSID : MyWiFi
+BSSID: XX:XX:XX:XX:XX:XX
+IP   : 192.168.1.10
 
-  SIGNAL : -45 dBm
-           ██████████████████░░ 90%
+SIGNAL : -45 dBm
+██████████████████░░ 90%
 
-  ◉ WIFI DI SEKITAR
-  ─────────────────────────────────────────
+◉ WIFI DI SEKITAR
+────────────────────────────────────────────────────────
 
-★ 01 MyWiFi
-    BSSID : XX:XX:XX:XX:XX:XX
-    Signal: -45 dBm █████████████ 90%
-    Freq  : 2437 MHz
-    Channel: 6
+★ 01  MyWiFi
+   BSSID   : XX:XX:XX:XX:XX:XX
+   Signal  : -45 dBm
+   ██████████████████░░ 90%
+   Freq    : 2437 MHz
+   Channel : 6
 
- 02 NeighborWiFi
-    BSSID : XX:XX:XX:XX:XX:XX
-    Signal: -67 dBm █████████░░░░ 66%
-    Freq  : 2462 MHz
-    Channel: 11
+02  NeighborWiFi
+    BSSID   : XX:XX:XX:XX:XX:XX
+    Signal  : -67 dBm
+    █████████████░░░░░░ 66%
+    Freq    : 2462 MHz
+    Channel : 11
 
- 03 AnotherWiFi
-    BSSID : XX:XX:XX:XX:XX:XX
-    Signal: -81 dBm ████░░░░░░░░░ 38%
+03  AnotherWiFi
+    BSSID   : XX:XX:XX:XX:XX:XX
+    Signal  : -81 dBm
+    ███████░░░░░░░░░░░░ 38%
 
-  ↻ Update setiap 3 detik...
+↻ Update setiap 3 detik...
 
+Keterangan
 
-Tanda:
+Simbol:
 
 ★
 
@@ -112,7 +125,7 @@ Masih melalui F-Droid, cari:
 Termux:API
 
 
-Kemudian install.
+Kemudian install aplikasinya.
 
 ⚠️ Penting
 
@@ -120,8 +133,9 @@ Termux dan Termux:API sebaiknya berasal dari sumber yang sama.
 
 Disarankan:
 
-Termux → F-Droid
-Termux:API → F-Droid
+Termux      → F-Droid
+Termux:API  → F-Droid
+
 
 Jangan mencampur aplikasi Termux dari sumber berbeda karena dapat menyebabkan masalah signature atau kompatibilitas.
 
@@ -158,7 +172,7 @@ Install Python:
 pkg install python
 
 
-Setelah selesai, cek:
+Setelah selesai, cek versi Python:
 
 python --version
 
@@ -172,23 +186,22 @@ berarti Python sudah berhasil terinstall.
 
 5. 📡 Install Termux:API Package
 
-Sekarang install package Termux:
+Sekarang install package Termux:API di dalam Termux:
 
 pkg install termux-api
 
-
-Perhatikan:
+⚠️ Perhatikan
 
 Ada dua hal yang berbeda:
 
-Aplikasi Android
+Aplikasi Android:
 
 Termux:API
 
 
 dan
 
-Package di Termux
+Package di Termux:
 
 termux-api
 
@@ -201,19 +214,15 @@ Android pada beberapa versi membutuhkan permission lokasi agar Wi-Fi scanning da
 
 Buka:
 
-Settings
-→ Apps
-→ Termux
-→ Permissions
-→ Location
+Settings → Apps → Termux → Permissions → Location
 
 
-Kemudian izinkan akses lokasi sesuai pilihan yang tersedia di perangkat kamu.
+Kemudian izinkan akses lokasi sesuai pilihan yang tersedia pada perangkat kamu.
 
-Pastikan juga:
+Pastikan:
 
-Wi-Fi = ON
-Location/GPS = ON
+Wi-Fi       = ON
+Location    = ON
 
 
 terutama jika perangkat kamu memerlukannya untuk melakukan Wi-Fi scan.
@@ -231,7 +240,7 @@ Kemudian clone project:
 git clone https://github.com/XDON1/Termux-WiFi-Radar.git
 
 
-Masuk ke folder:
+Masuk ke folder project:
 
 cd Termux-WiFi-Radar
 
@@ -253,23 +262,24 @@ Buka:
 
 https://github.com/XDON1/Termux-WiFi-Radar
 
-Pilih:
+Kemudian pilih:
 
-Code
-→ Download ZIP
+Code → Download ZIP
 
 
-Kemudian ekstrak file tersebut.
+Setelah itu:
 
-Masuk ke folder project dan jalankan:
-
+Ekstrak file ZIP
+Masuk ke folder project
+Buka Termux pada folder tersebut
+Jalankan program
 python gdtradar.py
 
 🧪 Test Termux:API
 
 Sebelum menjalankan program, sangat disarankan untuk memastikan Termux:API bekerja dengan baik.
 
-Test Wi-Fi yang sedang digunakan
+Test Wi-Fi yang Sedang Digunakan
 
 Jalankan:
 
@@ -278,7 +288,7 @@ termux-wifi-connectioninfo
 
 Jika berhasil, akan muncul informasi dalam format JSON.
 
-Contohnya:
+Contoh:
 
 {
   "ssid": "MyWiFi",
@@ -333,7 +343,7 @@ Termux:API
 
 juga sudah terinstall.
 
-🔎 Wi-Fi yang ditemukan kosong
+🔎 Wi-Fi yang Ditemukan Kosong
 
 Coba periksa:
 
@@ -343,19 +353,15 @@ Termux memiliki permission Location
 Aplikasi Termux:API sudah terinstall
 Package termux-api sudah terinstall
 
-Kemudian test:
+Kemudian test kembali:
 
 termux-wifi-scaninfo
 
-🔐 Permission denied
+🔐 Permission Denied
 
 Buka:
 
-Settings
-→ Apps
-→ Termux
-→ Permissions
-→ Location
+Settings → Apps → Termux → Permissions → Location
 
 
 Kemudian berikan permission lokasi.
@@ -375,7 +381,7 @@ Kemudian cek:
 
 python --version
 
-📡 Tidak ada Wi-Fi yang sedang terhubung
+📡 Tidak Ada Wi-Fi yang Sedang Terhubung
 
 Pastikan perangkat Android memang sedang terhubung ke jaringan Wi-Fi.
 
@@ -385,7 +391,7 @@ termux-wifi-connectioninfo
 
 📦 Instalasi Cepat
 
-Kalau kamu sudah tahu apa yang harus dilakukan, gunakan:
+Jika kamu sudah tahu apa yang harus dilakukan, gunakan:
 
 pkg update && pkg upgrade
 pkg install python git termux-api
@@ -394,7 +400,7 @@ cd Termux-WiFi-Radar
 python gdtradar.py
 
 
-Jangan lupa: aplikasi Termux:API juga harus terinstall di Android.
+⚠️ Jangan lupa: aplikasi Termux:API juga harus terinstall di Android.
 
 🗑️ Menghapus Project
 
@@ -408,7 +414,11 @@ Kemudian:
 rm -rf Termux-WiFi-Radar
 
 
-⚠️ Perintah rm -rf akan menghapus folder beserta isinya. Pastikan kamu berada di lokasi yang benar sebelum menjalankannya.
+⚠️ Perhatian
+
+Perintah rm -rf akan menghapus folder beserta seluruh isinya.
+
+Pastikan kamu berada di lokasi yang benar sebelum menjalankan perintah tersebut.
 
 🛑 Menghentikan Program
 
@@ -421,14 +431,14 @@ akan menghentikan program.
 
 ⚙️ Persyaratan
 Komponen	Status
-Android	✅ Required
-Termux	✅ Required
-Termux:API App	✅ Required
-termux-api package	✅ Required
-Python	✅ Required
-Wi-Fi	✅ Required
-Location Permission	⚠️ Tergantung perangkat/Android
-Internet	📥 Dibutuhkan saat instalasi/clone
+📱 Android	✅ Required
+📟 Termux	✅ Required
+🔌 Termux:API App	✅ Required
+📦 termux-api package	✅ Required
+🐍 Python	✅ Required
+📶 Wi-Fi	✅ Required
+📍 Location Permission	⚠️ Tergantung perangkat/Android
+🌐 Internet	📥 Dibutuhkan saat instalasi/clone
 🔐 Disclaimer
 
 Termux WiFi Radar dibuat untuk monitoring dan pembelajaran jaringan pada perangkat sendiri atau lingkungan yang memiliki izin.
@@ -459,11 +469,8 @@ Jika project ini membantu kamu belajar tentang:
 
 jangan lupa berikan ⭐ Star pada repository.
 
-<div align="center">
-📡 Termux WiFi Radar
+📄 License
 
-Made for Termux & Android
+Project ini menggunakan lisensi MIT License.
 
-⭐ Star the repository if you find it useful!
-
-</div>
+Lihat file LICENSE untuk informasi lengkap.
