@@ -1,7 +1,3 @@
-📡 Termux WiFi Radar
-
-Wi-Fi Scanner & Signal Monitor untuk Termux Android
-
 <p align="center">
   <img src="https://img.shields.io/badge/Status-v1.0%20Stable-brightgreen?style=for-the-badge" alt="Status">
   <img src="https://img.shields.io/github/stars/XDON1/Termux-WiFi-Radar?style=for-the-badge&color=8A2BE2" alt="Stars">
@@ -23,7 +19,6 @@ Wi-Fi Scanner & Signal Monitor untuk Termux Android
 📡 Tentang Project
 
 Termux WiFi Radar adalah tools sederhana berbasis Python untuk Termux Android yang digunakan untuk melihat informasi jaringan Wi-Fi di sekitar perangkat.
-
 Tools ini menggunakan Termux:API untuk membaca informasi yang disediakan oleh Android.
 
 ⚠️ Termux WiFi Radar BUKAN Wi-Fi hacking tool.
