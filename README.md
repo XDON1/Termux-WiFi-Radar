@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-v1.0%20Stable-brightgreen?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" alt="Status">
   <img src="https://img.shields.io/github/stars/XDON1/Termux-WiFi-Radar?style=for-the-badge&color=8A2BE2" alt="Stars">
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
 </p>
@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/XDON1/Termux-WiFi-Radar"> GITHUB: XDON1/Termux-WiFi-Radar</a>
+  <a href="https://github.com/XDON1/Termux-WiFi-Radar">🔗 GitHub: XDON1/Termux-WiFi-Radar</a>
 </p>
 
 ---
