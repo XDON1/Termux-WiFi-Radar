@@ -137,15 +137,13 @@ Jika muncul Python 3.x.x berarti Python berhasil terinstall.
 5. 📡 Install Termux:API Package
 
 Install package Termux:API di dalam Termux:
-
 ```bash
 pkg install termux-api
 ```
 
 ⚠️ Perhatikan: Ada dua hal yang berbeda:
-
-· Aplikasi Android: Termux:API
-· Package di Termux: termux-api
+• Aplikasi Android: Termux:API
+• Package di Termux: termux-api
   Kamu membutuhkan keduanya.
 
 6. 📍 Berikan Permission Lokasi
@@ -153,52 +151,42 @@ pkg install termux-api
 Android pada beberapa versi membutuhkan permission lokasi agar Wi‑Fi scanning dapat bekerja.
 
 Buka:
-
 ```
 Settings → Apps → Termux → Permissions → Location
 ```
 
 Kemudian izinkan akses lokasi sesuai pilihan yang tersedia pada perangkat kamu.
-
 Pastikan:
-
 · Wi‑Fi = ON
 · Location = ON
-
 terutama jika perangkat kamu memerlukannya untuk melakukan Wi‑Fi scan.
 
 ---
 
 🚀 Cara Menjalankan
-
-Cara 1 — Clone Repository
+Clone Repository
 
 Jika Git belum terinstall:
-
 ```bash
 pkg install git
 ```
 
 Clone project:
-
 ```bash
 git clone https://github.com/XDON1/Termux-WiFi-Radar.git
 ```
 
 Masuk ke folder project:
-
 ```bash
 cd Termux-WiFi-Radar
 ```
 
 Jalankan:
-
 ```bash
 python gdtradar.py
 ```
 
 Cara 2 — Download File Secara Manual
-
 1. Buka https://github.com/XDON1/Termux-WiFi-Radar
 2. Pilih Code → Download ZIP
 3. Ekstrak file ZIP
@@ -213,17 +201,14 @@ python gdtradar.py
 ---
 
 🧪 Test Termux:API
-
 Sebelum menjalankan program, sangat disarankan untuk memastikan Termux:API bekerja dengan baik.
 
 Test Wi‑Fi yang Sedang Digunakan
-
 ```bash
 termux-wifi-connectioninfo
 ```
 
 Jika berhasil, akan muncul informasi dalam format JSON:
-
 ```json
 {
   "ssid": "MyWiFi",
@@ -233,7 +218,6 @@ Jika berhasil, akan muncul informasi dalam format JSON:
 ```
 
 Test Wi‑Fi Scan
-
 ```bash
 termux-wifi-scaninfo
 ```
@@ -367,5 +351,3 @@ Lihat file LICENSE untuk informasi lengkap.
 </p>
 
 ```
-
----
