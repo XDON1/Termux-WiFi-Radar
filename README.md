@@ -263,17 +263,13 @@ CTRL + C
 ---
 
 ❗ Troubleshooting
-
 termux-wifi-scaninfo: command not found
-
 ```bash
 pkg install termux-api
 ```
-
 Pastikan aplikasi Android Termux:API juga sudah terinstall.
 
 🔎 Wi‑Fi yang Ditemukan Kosong
-
 Periksa hal berikut:
 
 · Wi‑Fi Android aktif
@@ -283,37 +279,29 @@ Periksa hal berikut:
 · Package termux-api sudah terinstall
 
 Kemudian test kembali:
-
 ```bash
 termux-wifi-scaninfo
 ```
 
 🔐 Permission Denied
-
 Buka:
-
 ```
 Settings → Apps → Termux → Permissions → Location
 ```
-
 Berikan permission lokasi.
 Pada beberapa perangkat, aktifkan juga:
-
 ```
 Settings → Location
 ```
 
 🐍 python: command not found
-
 ```bash
 pkg install python
 python --version
 ```
 
 📡 Tidak Ada Wi‑Fi yang Sedang Terhubung
-
 Pastikan perangkat Android memang sedang terhubung ke jaringan Wi‑Fi.
-
 ```bash
 termux-wifi-connectioninfo
 ```
@@ -323,7 +311,6 @@ termux-wifi-connectioninfo
 📦 Instalasi Cepat
 
 Jika kamu sudah tahu apa yang harus dilakukan:
-
 ```bash
 pkg update && pkg upgrade
 pkg install python git termux-api
@@ -331,45 +318,26 @@ git clone https://github.com/XDON1/Termux-WiFi-Radar.git
 cd Termux-WiFi-Radar
 python gdtradar.py
 ```
-
 ⚠️ Jangan lupa: aplikasi Termux:API juga harus terinstall di Android.
 
 ---
 
 🗑️ Menghapus Project
-
 ```bash
 cd ..
 rm -rf Termux-WiFi-Radar
 ```
-
 ⚠️ Perhatian: Perintah rm -rf akan menghapus folder beserta seluruh isinya. Pastikan kamu berada di lokasi yang benar sebelum menjalankan perintah tersebut.
 
 ---
 
 🛑 Menghentikan Program
-
 Saat radar sedang berjalan:
 
 ```
 CTRL + C
 ```
-
 akan menghentikan program.
-
----
-
-⚙️ Persyaratan
-
-Komponen Status
-📱 Android ✅ Required
-📟 Termux ✅ Required
-🔌 Termux:API App ✅ Required
-📦 termux-api package ✅ Required
-🐍 Python ✅ Required
-📶 Wi‑Fi ✅ Required
-📍 Location Permission ⚠️ Tergantung perangkat/Android
-🌐 Internet 📥 Dibutuhkan saat instalasi/clone
 
 ---
 
@@ -377,42 +345,27 @@ Komponen Status
 
 GDT Wi‑Fi SIGNAL RADAR dibuat untuk monitoring dan pembelajaran jaringan pada perangkat sendiri atau lingkungan yang memiliki izin.
 
-Tools ini hanya membaca informasi jaringan yang tersedia melalui API Android/Termux.
-
-Tools ini tidak menyediakan fitur untuk:
-
-· ❌ Mengambil password Wi‑Fi
-· ❌ Membobol jaringan Wi‑Fi
-· ❌ Mengakses router tanpa izin
-· ❌ Menyerang perangkat lain
-· ❌ Deauthentication / disconnect attack
-· ❌ Menghindari keamanan jaringan
-· ❌ Mengambil kredensial jaringan
-
-Gunakan tools ini secara bertanggung jawab dan hanya pada perangkat atau jaringan yang kamu miliki atau memiliki izin untuk dianalisis.
+Tools ini hanya membaca informasi jaringan yang tersedia melalui API Android/Termux
 
 ---
 
 ⭐ Support Project
 
-Jika project ini membantu kamu belajar tentang:
-
-· 📡 Wi‑Fi
-· 🌐 Networking
-· 📱 Termux
-· 🐍 Python
-· 🤖 Android API
-
-jangan lupa berikan ⭐ Star pada repository.
+Jika project ini membantu kamu belajar jangan lupa berikan ⭐ Star pada repository.
 
 ---
+
 📄 License
 
 Project ini menggunakan lisensi MIT License.
 Lihat file LICENSE untuk informasi lengkap.
+
 ---
+
 <p align="center">
   Made with ❤️ by <a href="https://github.com/XDON1">XDON1</a>
 </p>
+
 ```
+
 ---
