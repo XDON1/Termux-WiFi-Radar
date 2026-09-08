@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/XDON1/Termux-WiFi-Radar">🔗 GitHub: XDON1/Termux-WiFi-Radar</a>
+  <a href="https://github.com/XDON1/Termux-WiFi-Radar"> GITHUB: XDON1/Termux-WiFi-Radar</a>
 </p>
 
 ---
