@@ -73,7 +73,7 @@ Tools ini menggunakan Termux:API untuk membaca informasi yang disediakan oleh An
            #################### 90%
            KUAT
 
-  WIFI DI SEKITAR
+  ◉ WIFI DI SEKITAR
   ─────────────────────────────────────────
 [MAIN] 01  MyWiFi
     BSSID : XX:XX:XX:XX:XX:XX
@@ -90,7 +90,7 @@ Tools ini menggunakan Termux:API untuk membaca informasi yang disediakan oleh An
   ─────────────────────────────────────────
   RADAR UPDATE SETIAP 8 DETIK
   CTRL+C untuk keluar
-'''
+```
 
 Keterangan: [MAIN] menandakan Wi‑Fi yang sedang digunakan oleh perangkat.
 ---
