@@ -94,3 +94,51 @@ Tools ini menggunakan Termux:API untuk membaca informasi yang disediakan oleh An
 
 Keterangan: [MAIN] menandakan Wi‑Fi yang sedang digunakan oleh perangkat.
 ---
+
+📱 Instalasi
+
+Jangan khawatir kalau kamu baru pertama kali menggunakan Termux.
+Ikuti langkah berikut dari atas sampai bawah.
+
+1. 📲 Install Termux
+
+Disarankan menggunakan Termux dari F‑Droid.
+⚠️ Hindari menggunakan Termux versi lama dari Google Play karena beberapa versi lama tidak lagi mendapatkan pembaruan yang diperlukan.
+
+1. Download F‑Droid: https://f-droid.org/
+2. Buka F‑Droid
+3. Cari Termux
+4. Install Termux
+
+2. 🔌 Install Termux:API
+
+Masih melalui F‑Droid, cari Termux:API kemudian install.
+
+⚠️ Penting: Termux dan Termux:API sebaiknya berasal dari sumber yang sama.
+Disarankan: Termux → F‑Droid, Termux:API → F‑Droid.
+Jangan mencampur aplikasi Termux dari sumber berbeda karena dapat menyebabkan masalah signature atau kompatibilitas.
+
+3. 🔄 Update Termux
+
+Buka aplikasi Termux, jalankan:
+
+```bash
+pkg update
+pkg upgrade
+```
+
+Jika muncul Do you want to continue? [Y/n], ketik y lalu Enter.
+
+4. 🐍 Install Python
+
+```bash
+pkg install python
+```
+
+Cek versi Python:
+
+```bash
+python --version
+```
+
+Jika muncul Python 3.x.x berarti Python berhasil terinstall.
