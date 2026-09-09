@@ -292,8 +292,7 @@ termux-wifi-connectioninfo
 
 ---
 
-📦 Instalasi Cepat
-
+## Instalasi Cepat
 Jika kamu sudah tahu apa yang harus dilakukan:
 ```bash
 pkg update && pkg upgrade
@@ -306,18 +305,18 @@ python gdtradar.py
 
 ---
 
-🗑️ Menghapus Project
+## Menghapus Project
 ```bash
 cd ..
 rm -rf Termux-WiFi-Radar
 ```
-⚠️ Perhatian: Perintah rm -rf akan menghapus folder beserta seluruh isinya. Pastikan kamu berada di lokasi yang benar sebelum menjalankan perintah tersebut.
+## Perhatian: 
+Perintah rm -rf akan menghapus folder beserta seluruh isinya. Pastikan kamu berada di lokasi yang benar sebelum menjalankan perintah tersebut.
 
 ---
 
-🛑 Menghentikan Program
+## Menghentikan Program
 Saat radar sedang berjalan:
-
 ```
 CTRL + C
 ```
@@ -325,8 +324,7 @@ akan menghentikan program.
 
 ---
 
-🔐 Disclaimer
-
+## Disclaimer
 GDT Wi‑Fi SIGNAL RADAR dibuat untuk monitoring dan pembelajaran jaringan pada perangkat sendiri atau lingkungan yang memiliki izin.
 
 Tools ini hanya membaca informasi jaringan yang tersedia melalui API Android/Termux
@@ -334,7 +332,6 @@ Tools ini hanya membaca informasi jaringan yang tersedia melalui API Android/Ter
 ---
 
 ⭐ Support Project
-
 Jika project ini membantu kamu belajar jangan lupa berikan ⭐ Star pada repository.
 
 ---
@@ -349,5 +346,3 @@ Lihat file LICENSE untuk informasi lengkap.
 <p align="center">
   Made with ❤️ by <a href="https://github.com/XDON1">XDON1</a>
 </p>
-
-```
