@@ -27,7 +27,7 @@ Tools ini menggunakan Termux:API untuk membaca informasi yang disediakan oleh An
 
 ---
 
-## 🎯 Cocok Untuk
+## Cocok Untuk
 
 - 🔰 Pemula yang ingin belajar jaringan  
 - 📱 Pengguna Android dan Termux  
@@ -99,7 +99,7 @@ TUTORIAL
 Jangan khawatir kalau kamu baru pertama kali menggunakan Termux.
 Ikuti langkah berikut dari atas sampai bawah.
 
-1. Install Termux
+## 1. Install Termux
 Disarankan menggunakan Termux dari F‑Droid.
 ⚠️ Hindari menggunakan Termux versi lama dari Google Play karena beberapa versi lama tidak lagi mendapatkan pembaruan yang diperlukan.
 
@@ -108,14 +108,14 @@ Disarankan menggunakan Termux dari F‑Droid.
 3. Cari Termux
 4. Install Termux
 
-2. Install Termux:API
+## 2. Install Termux:API
 Masih melalui F‑Droid, cari Termux:API kemudian install.
 
 ⚠️ Penting: Termux dan Termux:API sebaiknya berasal dari sumber yang sama.
 Disarankan: Termux → F‑Droid, Termux:API → F‑Droid.
 Jangan mencampur aplikasi Termux dari sumber berbeda karena dapat menyebabkan masalah signature atau kompatibilitas.
 
-3. Update Termux
+## 3. Update Termux
 Buka aplikasi Termux, jalankan:
 ```bash
 pkg update
@@ -123,7 +123,7 @@ pkg upgrade
 ```
 Jika muncul Do you want to continue? [Y/n], ketik y lalu Enter.
 
-4. Install Python
+## 4. Install Python
 ```bash
 pkg install python
 ```
@@ -134,7 +134,7 @@ python --version
 ```
 Jika muncul Python 3.x.x berarti Python berhasil terinstall.
 
-5. 📡 Install Termux:API Package
+## 5. Install Termux:API Package
 
 Install package Termux:API di dalam Termux:
 ```bash
@@ -146,7 +146,7 @@ pkg install termux-api
 • Package di Termux: termux-api
   Kamu membutuhkan keduanya.
 
-6. 📍 Berikan Permission Lokasi
+## 6. Berikan Permission Lokasi
 
 Android pada beberapa versi membutuhkan permission lokasi agar Wi‑Fi scanning dapat bekerja.
 
@@ -163,7 +163,7 @@ terutama jika perangkat kamu memerlukannya untuk melakukan Wi‑Fi scan.
 
 ---
 
-🚀 Cara Menjalankan
+## Cara Menjalankan
 Clone Repository
 
 Jika Git belum terinstall:
@@ -200,15 +200,13 @@ python gdtradar.py
 
 ---
 
-🧪 Test Termux:API
-Sebelum menjalankan program, sangat disarankan untuk memastikan Termux:API bekerja dengan baik.
-
-Test Wi‑Fi yang Sedang Digunakan
+## Test Termux:API
+**Sebelum menjalankan program, sangat disarankan untuk memastikan Termux:API bekerja dengan baik.
+Test Wi‑Fi yang Sedang Digunakan**
 ```bash
 termux-wifi-connectioninfo
 ```
-
-Jika berhasil, akan muncul informasi dalam format JSON:
+**Jika berhasil, akan muncul informasi dalam format JSON:**
 ```json
 {
   "ssid": "MyWiFi",
@@ -217,19 +215,17 @@ Jika berhasil, akan muncul informasi dalam format JSON:
 }
 ```
 
-Test Wi‑Fi Scan
+**Test Wi‑Fi Scan**
 ```bash
 termux-wifi-scaninfo
 ```
 
-Jika berhasil, command akan menampilkan jaringan Wi‑Fi yang berhasil ditemukan.
-
-Jika kedua command tersebut dapat berjalan, Termux:API sudah siap digunakan oleh script.
+**Jika berhasil, command akan menampilkan jaringan Wi‑Fi yang berhasil ditemukan.
+Jika kedua command tersebut dapat berjalan, Termux:API sudah siap digunakan oleh script**
 
 ---
 
-▶️ Menjalankan Radar
-
+## Menjalankan Radar
 Setelah semua kebutuhan terinstall:
 
 ```bash
@@ -253,21 +249,21 @@ pkg install termux-api
 ```
 Pastikan aplikasi Android Termux:API juga sudah terinstall.
 
-🔎 Wi‑Fi yang Ditemukan Kosong
-Periksa hal berikut:
 
+🚨 Wi‑Fi yang Ditemukan Kosong
+**Periksa hal berikut:
 · Wi‑Fi Android aktif
 · Location/GPS aktif jika diperlukan
 · Termux memiliki permission Location
 · Aplikasi Termux:API sudah terinstall
-· Package termux-api sudah terinstall
+· Package termux-api sudah terinstall**
 
 Kemudian test kembali:
 ```bash
 termux-wifi-scaninfo
 ```
 
-🔐 Permission Denied
+## Permission Denied
 Buka:
 ```
 Settings → Apps → Termux → Permissions → Location
@@ -278,13 +274,13 @@ Pada beberapa perangkat, aktifkan juga:
 Settings → Location
 ```
 
-🐍 python: command not found
+## python: command not found
 ```bash
 pkg install python
 python --version
 ```
 
-📡 Tidak Ada Wi‑Fi yang Sedang Terhubung
+## Tidak Ada Wi‑Fi yang Sedang Terhubung
 Pastikan perangkat Android memang sedang terhubung ke jaringan Wi‑Fi.
 ```bash
 termux-wifi-connectioninfo
